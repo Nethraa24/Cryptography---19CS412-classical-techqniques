@@ -70,7 +70,8 @@ if (isupper(plain[i]) && (cipher[i] > 'Z'))
 ```
 
 ## OUTPUT:
-![alt text](<caesar cipher.png>)
+![caesar cipher](https://github.com/user-attachments/assets/decb2f76-8f92-42c3-bc98-30d4a2ccf7b8)
+
 
 ## RESULT:
 The program is executed successfully
@@ -248,7 +249,8 @@ return 0;
 }
 ```
 ## OUTPUT:
-![alt text](<Screenshot (30).png>)
+![Screenshot (30)](https://github.com/user-attachments/assets/6fc29512-d9a2-409b-a5ed-586b798afe3c)
+
 
 ## RESULT:
 The program is executed successfully
@@ -327,7 +329,8 @@ return 0;
 ```
 
 ## OUTPUT:
-![alt text](<hill cipher.png>)
+![hill cipher](https://github.com/user-attachments/assets/1e09f12a-ed34-4418-bd5c-37d0092a55be)
+
 ## RESULT:
 The program is executed successfully
 
@@ -426,7 +429,8 @@ printf("%c",65 + (value % 26));
 
 ```
 ## OUTPUT:
-![alt text](<Vigenere Cipher.png>)
+![Vigenere Cipher](https://github.com/user-attachments/assets/d52ef8b6-1b76-4e32-9575-a713ddbab000)
+
 
 ## RESULT:
 The program is executed successfully
@@ -508,7 +512,8 @@ printf("%s",d);
 ```
 
 ## OUTPUT:
-![alt text](<rail fence.png>)
+![rail fence](https://github.com/user-attachments/assets/3f3e61e9-6462-467e-a8fb-70c5a462cbca)
+
 
 ## RESULT:
 The program is executed successfully
