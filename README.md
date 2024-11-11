@@ -70,7 +70,7 @@ if (isupper(plain[i]) && (cipher[i] > 'Z'))
 ```
 
 ## OUTPUT:
-![caesar cipher](https://github.com/user-attachments/assets/decb2f76-8f92-42c3-bc98-30d4a2ccf7b8)
+![image](https://github.com/user-attachments/assets/f2c30e3b-87f9-4edc-a96c-b335ee7a259e)
 
 
 ## RESULT:
