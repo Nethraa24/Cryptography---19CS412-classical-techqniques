@@ -498,58 +498,67 @@ In the rail fence cipher, the plaintext is written downwards and diagonally on s
 
 ## PROGRAM:
 ```
-#include<stdio.h>
-#include<string.h>
-void main()
-{
-int i,j,k,l;
-char a[20],c[20],d[20];
-printf("\n\t\t RAIL FENCE TECHNIQUE");
-printf("\n\nEnter the input string : ");
-for (i=0;i<20;i++)
-{
-    scanf("%c",&a[i]);
-}
-l=strlen(a);
-/Ciphering/
-for(i=0,j=0;i<l;i++)
-{
- if(i%2==0)
- c[j++]=a[i];
-}
-for(i=0;i<l;i++)
-{
- if(i%2==1)
- c[j++]=a[i];
-}
-c[j]='\0';
-printf("\nCipher text after applying rail fence :");
-printf("\n%s",c);
-/Deciphering/
-if(l%2==0)
- k=l/2;
-else
- k=(l/2)+1;
-for(i=0,j=0;i<k;i++)
-{
- d[j]=c[i];
- j=j+2;
-}
-for(i=k,j=1;i<l;i++)
-{
- d[j]=c[i];
- j=j+2;
-}
-d[l]='\0';
-printf("\nText after decryption : ");
-printf("%s",d);
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+int main() {
+    int i, j, len, rails, count;
+    char str[1000];
+    int code[100][1000]; 
+
+    printf("Enter a Message: ");
+    fgets(str, sizeof(str), stdin);  
+    str[strcspn(str, "\n")] = '\0'; 
+
+    len = strlen(str);
+
+    printf("Enter number of rails: ");
+    scanf("%d", &rails);
+
+    for (i = 0; i < rails; i++) {
+        for (j = 0; j < len; j++) {
+            code[i][j] = 0;
+        }
+    }
+
+    count = 0;  
+    j = 0;      
+
+    while (j < len) {
+        if (count % 2 == 0) {
+            for (i = 0; i < rails && j < len; i++) {
+                code[i][j] = (int)str[j]; 
+                j++;
+            }
+        } else {
+            for (i = rails - 2; i > 0 && j < len; i--) {
+                code[i][j] = (int)str[j]; 
+                j++;
+            }
+        }
+        count++;
+    }
+
+ 
+    printf("\nEncrypted Message: ");
+    for (i = 0; i < rails; i++) {
+        for (j = 0; j < len; j++) {
+            if (code[i][j] != 0) {
+                printf("%c", code[i][j]);
+            }
+        }
+    }
+    printf("\n");
+
+    return 0;
 }
 
 ```
 
 ## OUTPUT:
-![rail fence](https://github.com/user-attachments/assets/3f3e61e9-6462-467e-a8fb-70c5a462cbca)
+![image](https://github.com/user-attachments/assets/a7694cc6-0927-4503-b8a5-6f3ab505d451)
 
 
 ## RESULT:
-The program is executed successfully
+The program is executed successfully.
