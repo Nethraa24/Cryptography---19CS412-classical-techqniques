@@ -329,7 +329,7 @@ return 0;
 ```
 
 ## OUTPUT:
-![hill cipher](https://github.com/user-attachments/assets/1e09f12a-ed34-4418-bd5c-37d0092a55be)
+![image](https://github.com/user-attachments/assets/0c90fa63-216c-438c-94da-23962d37d4de)
 
 ## RESULT:
 The program is executed successfully
